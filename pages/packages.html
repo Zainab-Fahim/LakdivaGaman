@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lakdivaගමන්</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/package.css" />
+
+
+    
+</head>
+<body>
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> 
+        <img src="../images/logo.png" alt="logo image" class="lglogo">
+    </a>
+
+    <nav class="navbar">
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
+        <a data-aos="zoom-in-left" data-aos-delay="450" href="pages/packages.html">packages</a>
+        <a data-aos="zoom-in-left" data-aos-delay="600" href="pages/gallery.html">gallery</a>
+        <a data-aos="zoom-in-left" data-aos-delay="750" href="pages/quiz.html">quiz</a>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="#review">review</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1050" href="#team">team</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1200" href="#contact">contact</a>
+    </nav>
+    
+    <div class="icons">
+        <a href="pages/login.html" target="_blank"><i class="fas fa-user" id="login-btn"></i></a>
+    </div>
+
+
+</header>
+
+<!-- header section ends -->
+
+<main class="background-container" id="blur">
+    <div class="content">
+    <div class="hero">
+        <div class="container">
+            <div class="main-heading">
+                <h1 class="title">Discover</h1>
+                <h2 class="subtitle">Luxury hotels</h2>
+            </div>
+            
+        </div>
+    </div>
+    <section class="booking">
+        <div class="container">
+            <form action="rizwan.20210406@iit.ac.lk" method="post" class="forms">
+                <div class="input-group">
+                    <label for="name" class="input-label">Name</label>
+                    <input type="text" class="input" id="name">
+                </div>
+                <div class="input-group">
+                    <label for="email" class="input-label">E-mail</label>
+                    <input type="text" class="input" id="email">
+                </div>
+                <div class="input-group">
+                    <label for="check-in" class="input-label">Check in</label>
+                    <input type="date" class="input" id="check-in">
+                </div>
+                <div class="input-group">
+                    <label for="check-out" class="input-label">Check out</label>
+                    <input type="date" class="input" id="check-out">
+                </div>
+                <div class="input-group">
+                    <label for="adults" class="input-label">Adults</label>
+                    <select  class="option" id="adults">
+                        <option value="0" >1</option>
+                        <option value="0" >2</option>
+                        <option value="0" >3</option>
+                        <option value="0" >4</option>
+                        <option value="0" >5</option>
+                        <option value="0" >6</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="children" class="input-label">Children</label>
+                    <select  class="option" id="children">
+                        <option value="0" >1</option>
+                        <option value="0" >2</option>
+                        <option value="0" >3</option>
+                        <option value="0" >4</option>
+                        <option value="0" >5</option>
+                        <option value="0" >6</option>
+                    </select>
+                </div>        
+
+                
+            </form>
+        </div>
+    </section>
+    <section class="hotels">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Explore</span>
+                    <span class="subheading">Our beautiful hotels</span>
+            </h5>
+            </div>
+        </section>
+            <div class="grid">
+                <div class="grid-item feature-hotels">
+                    <img src="../images/ellah1.jfif" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Acres Resort & Spa Ella</h5>
+                    <span class="hotel-price">From $100/Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <button class="btn btn-gradient" value="100"  id="100" onclick="toggle(this.id)">Book now
+                        <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                    </button>
+                </div>
+            </div>
+                <div class="grid">
+                    <div class="grid-item feature-hotels">
+                        <img src="../images/kandyh1.jfif" alt="" class="hotel-image">
+                        <h5 class="hotel-name">Golden Crown Hotel Kandy</h5>
+                        <span class="hotel-price">From $120/Day</span>
+                        <div class="hotel-rating">
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            
+                        </div>                        
+                        <button class="btn btn-gradient" value="120" id="120" onclick="toggle(this.id)">Book now
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid-item feature-hotels">
+                        <img src="../images/galleh2.jfif" alt="" class="hotel-image">
+                        <h5 class="hotel-name">Galle Fort Hotel</h5>
+                        <span class="hotel-price">From $140/Day</span>
+                        <div class="hotel-rating">
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                        </div>
+                        <button class="btn btn-gradient" value="140" id="140" onclick="toggle(this.id)">Book now
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </button><button></button>>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid-item feature-hotels">
+                        <img src="../images/sigirih1.jfif" alt="" class="hotel-image">
+                        <h5 class="hotel-name">Hotel Sigiriya</h5>
+                        <span class="hotel-price">From $160/Day</span>
+                        <div class="hotel-rating">
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star-half rating"></i>
+                        </div>
+                        <button class="btn btn-gradient" value="160" id="160" onclick="toggle(this.id)">Book now
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+    
+    <section class="offer">
+        <div class="container">
+            <div class="offer-content">
+                <div class="discount">
+                    40% off
+                </div>
+                <h5 class="hotel-name">Hotel Nilaveli</h5>
+                <div class="hotel-rating">
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star-half rating"></i>
+                </div>
+                <p class="paragraph">
+                    Located in 25 minutes' stroll of Pigeon Island National Park, 5-star Anilana Nilaveli Trincomalee offers contemporary rooms within 1.9 miles to the Scenic Nilaveli Sandy Beach. This Trincomalee hotel is situated close to a bus stop, and offers a tropical garden as well as a lobby bar.
+                </p>
+                <button class="btn btn-gradient" value="180" id="180" onclick="toggle()">Redeem offer
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="rooms">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Luxurious</span>
+                <span class="sub-heading">Affordable rooms</span>
+            </h5>
+            <div class="grid rooms-grid">
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="../images/galleh1.jfif" alt="" class="room-image">
+                        <h5 class="room-name1">Marino Beach </h5>
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$200 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Marino Beach Colombo has a restaurant, outdoor swimming pool, a fitness centre and bar in Colombo. 2.4 km from Galle Face Beach and 1.7 km from U.S. Embassy.
+                        </p>
+                        <button class="btn rooms-btn" value="200" id="200" onclick="toggle()">Book now &rAarr;</button>
+                    
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="../images/room2.jfif" alt="" class="room-image">
+                        <h5 class="room-name1">Shangri-La </h5>
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$210 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Shangri-La, Colombo presents a new level of luxury in the city. Located in the heart of the business and entertainment district, the hotel offers the various collection of guestrooms  </p>
+                        <button class="btn rooms-btn"  value="210" id="220" onclick="toggle()">Book now &rAarr;</button>
+                    
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="../images/room3.jfif" alt="" class="room-image">
+                        <h5 class="room-name1"> Boutique Suites</h5>
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$220 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Located in the suburbs of Colombo city, 55TG Boutique Suites offers an authentic home stay experience in a two story 1920's period house with a garden, outdoor pavilion, living room and a lounge.
+                        </p>
+                        <button class="btn rooms-btn" value="220"  onclick="toggle()">Book now &rAarr;</button>
+                    
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="../images/room4.jfif" alt="" class="room-image">
+                        <h5 class="room-name1">Mandarina </h5>
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$230 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Strategically located in Colombo and only 1.5 km from the U.S Embassy, Mandarina Colombo offers modern and comfortable accommodation with free WiFi access throughout the property.
+                        </p>
+                        <button class="btn rooms-btn" value="230" id="230" onclick="toggle()">Book now &rAarr;</button>
+                    
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="../images/room6.jfif" alt="" class="room-image">
+                        <h5 class="room-name1">Grand Kandiyen</h5>
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$240 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Located in Kandy, The Grand Kandyan is in the historical district and in the mountains. And the area's natural beauty can be seen at Udawatta Kele Sanctuary and Kandy Lake.
+                        </p>
+                        <button class="btn rooms-btn" value="240" id="240" onclick="toggle()">Book now &rAarr;</button>
+                    
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="../images/room5.jfif" alt="" class="room-image">
+                        <h5 class="room-name1">Early's Regency</h5>
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$250 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Located in Kandy, Earl's Regency is in the historical district and near a metro station. Temple of the Tooth and Royal Palace of Kandy are local landmarks
+                        </p>
+                        <button class="btn rooms-btn" value="250" id="250" onclick="toggle()">Book now &rAarr;</button>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Contact</span>
+                <span class="sub-heading">Get in touch with us</span>
+            </h5> 
+            <div class="contact-content">
+                <div class="travel-wrap">
+                    <img src="../images/traveler.png" alt="">
+                </div>
+                <form action="mailto:rizwan.20210406@iit.ac.lk" method="post" class="form contact-form">
+                    <div class="input-group-wrap">
+                        <div class="input-group">
+                            <input type="text" class="input" placeholder="Name" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="input" placeholder="E-mail" required>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                        <div class="input-group">
+                            <input type="text" class="input" placeholder="Subject" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="input" cols="30"  placeholder="Messages" required></textarea>
+                            <span class="bar"></span>
+                        </div>
+                    <button type="submit" class="btn form-btn btn-purple">Send Message
+                        <span class="dots"><i class="fas.fa-ellipsis-h"></i></span>
+                    </button>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<div class="background-container" id="blur2">
+    <div class="content">
+        <h2></h2>
+        <a href="#" onclick="toggle()"></a>            
+    </div>
+</div>
+<div id="popup">
+    <h6>Booking Success!</h6>
+    <p id="bookingName">
+        Name 
+    </p>
+    <p id="bookingEmail">
+        Email 
+    </p>
+    <p id="bookingCheckInDate">
+        Check In Date 
+    </p>
+    <p id="bookingCheckOutDate">
+        Check Out Date 
+    </p>
+    <p id="bookingNoOfAdults">
+        Adults 
+    </p>
+    <p id="bookingNoOfChildren">
+        Childrens 
+    </p>
+    <p id="price">
+        Price
+    </p>
+    <p id="noOfDays">
+        Days
+    </p>
+    
+ 
+    <a href="#" onclick="toggle()">CLOSE</a>
+</div>
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <a href="#" class="logo"><img src="../images/logo.png" alt="logo image" class="lglogo"></a>
+            <p>Only a click away from your dream vacation. Bringing to you a whole package of thrill, excitement and adventure</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="pages/packages.html" class="links"> <i class="fas fa-arrow-right"></i> packages </a>
+            <a href="pages/gallery.html" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+            <a href="pages/quiz.html" class="links"> <i class="fas fa-arrow-right"></i> quiz </a>
+            <a href="#review" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#team" class="links"> <i class="fas fa-arrow-right"></i> team </a>
+            <a href="#contact" class="links"> <i class="fas fa-arrow-right"></i> contact </a>
+            <a href="pages/site-map.html" class="links"> <i class="fas fa-arrow-right"></i> site-map </a>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map"></i> colombo, Sri Lanka </p>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p class="site-email"> <i class="fas fa-envelope"></i> lakdivagaman@gmail.com </p>
+            <p> <i class="fas fa-clock"></i> 7:00am - 10:00pm </p>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form>
+                <input type="email" placeholder="enter your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="credit">Page Developer: <a href="rimaz.html">Rimaz Rizwan</a></div>
+
+<!-- footer section ends -->
+
+
+<script src="../js/package.js"></script>
+</body>
+</html>
