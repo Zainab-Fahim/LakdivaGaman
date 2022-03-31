@@ -1,0 +1,94 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #12263A;
+    background-image: url("../F5_Images/BG7.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  }
+  *{
+    margin:0;
+    padding:0
+  }
+  .imgcard{
+    width:50%;
+    height:auto;
+    background:#243a50;
+    padding:30px;
+    box-sizing:border-box;
+    text-align:center;
+    border-radius:20px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    overflow:hidden;
+  }
+  .imgcard img{
+    width:100px;
+    height:100px;
+    display:block;
+    margin:auto;
+    border-radius:50%;
+  }
+  .imgcard div h1{
+    text-transform:uppercase;
+    margin-top:20px;
+    margin-bottom:20px;
+    line-height:24px
+  }
+  .imgcard div h1 span{
+    font-size:14px;
+    color:#f39c12;
+    padding: 10px;
+  }
+  
+  
+  
+  
+  .imgcard div a.btn{
+    text-decoration:none;
+    color:#f39c12;
+    border-color: #f39c12;
+    letter-spacing:5px;
+    width: 250px;
+    font-weight:bold;
+    border:1px solid #000;
+    font-weight:bold;
+    padding:10px;
+    border-radius:2px;
+    margin-top:15px;
+    display:inline-block;
+    transition:0.2s;
+  }
+  .imgcard div a.btn:hover{
+    border-color:#f39c12
+  }
+  .imgcard:before{
+    position:absolute;
+    content:'';
+    width:100px;
+    height:100px;
+    background:#f39c12;
+    bottom:0;
+    right:0;
+    z-index:-1;
+    border-top-left-radius:100px;
+    transition:0.5s;
+  }
+  .imgcard:hover:before{
+    transform:scale();
+  }
+  
+  a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+  }
+  h1{
+    padding: 10px;
+  }
+  
+  p{
+      color: black;
+  }
